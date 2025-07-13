@@ -26,4 +26,77 @@ Aplikasi Arsip Surat ini merupakan sistem manajemen arsip surat masuk dan surat 
 ---
 
 ## 🗂️ Struktur Folder
+/surat/
+├── css/ # Berkas CSS untuk styling
+├── js/ # Berkas JavaScript pendukung
+├── uploads/ # Folder penyimpanan file surat
+├── surat_masuk.php # Halaman kelola surat masuk
+├── surat_keluar.php # Halaman kelola surat keluar
+├── index.php # Dashboard utama
+├── login.php # Form login admin
+├── config.php # Koneksi database & konfigurasi umum
+├── logout.php # Logout user
+└── ... (halaman lainnya)
+
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- **PHP** – Untuk logika backend
+- **MySQL/MariaDB** – Penyimpanan data surat
+- **HTML5, CSS3, Bootstrap** – Tampilan antarmuka
+- **JavaScript/jQuery** – Interaktivitas pengguna
+- **FontAwesome** – Ikon-ikon modern
+
+---
+
+## 🔒 Keamanan
+
+- Validasi input form
+- Session-based authentication
+- Proteksi direktori `uploads/` agar file tidak langsung diakses
+
+---
+
+## 🚀 Cara Instalasi (di Localhost)
+
+1. Clone atau unduh proyek ini:
+    ```bash
+    git clone https://asephilmi.my.id/surat/
+    ```
+2. Import file database (`database.sql`) ke phpMyAdmin.
+3. Edit file `config.php` untuk menyesuaikan:
+    ```php
+    $db = new mysqli("localhost", "root", "", "nama_database");
+    ```
+4. Jalankan di browser:
+    ```
+    http://localhost/surat/
+    ```
+
+---
+
+## 👤 Login Admin
+
+- **Username:** admin  
+- **Password:** admin123 (atau sesuai data pada tabel `admin`)
+
+> ⚠️ Harap ganti password default setelah instalasi untuk keamanan.
+
+---
+
+## 📝 Lisensi
+
+Proyek ini bersifat open-source dan bebas digunakan untuk keperluan edukasi dan pengembangan sistem internal.
+
+---
+
+## 📩 Kontak
+
+Jika ada pertanyaan, saran, atau ingin mengembangkan sistem ini, hubungi:
+
+**Asep Hilmi**  
+[https://asephilmi.my.id](https://asephilmi.my.id)
+
 
